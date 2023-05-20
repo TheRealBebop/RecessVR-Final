@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2f2acada2f5b84fb95ece7c1daa8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equippedByDefault: 0
+  pickedUp: 0
   range: 4.35
   weaponDamage: 100
   muzzleFlash: {fileID: 2917563105002749333}
@@ -133,6 +135,7 @@ MonoBehaviour:
   timeBetweenShots: 1.5
   ammoText: {fileID: 0}
   fireActionReference: {fileID: 0}
+  canShoot: 1
   gunshotSound: {fileID: 0}
   triggerPressed: 0
 --- !u!1 &4461094844423055561
