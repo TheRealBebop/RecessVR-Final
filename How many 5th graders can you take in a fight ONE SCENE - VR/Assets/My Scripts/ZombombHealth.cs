@@ -49,7 +49,9 @@ public class ZombombHealth : MonoBehaviour
         {
             explosion.Play(true);
             Die();
-            gameSession.AddToScore();
+            gameSession.AddToScore(1);
+            isDead = true;
+            Destroy(this);
             Debug.Log(gameObject.name + " has been killed");
         }
     }

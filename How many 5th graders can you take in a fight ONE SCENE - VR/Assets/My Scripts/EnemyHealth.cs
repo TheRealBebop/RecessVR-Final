@@ -35,7 +35,10 @@ public class EnemyHealth : MonoBehaviour
         if (hitPoints <= 0)
         {
             Die();
-            gameSession.AddToScore();
+            gameSession.AddToScore(1);
+            isDead = true;
+            // this.enabled = false;
+            Destroy(this);
             Debug.Log(gameObject.name + " has been killed");
         }
     }

@@ -48,9 +48,9 @@ public class Player : MonoBehaviour
         scoreText.text = "Kill Count: " + score.ToString();
     }
 
-    public void AddToScore()
+    public void AddToScore(int points)
     {
-        score++;
+        score += points;
         scoreText.text = score.ToString();
     }
 }

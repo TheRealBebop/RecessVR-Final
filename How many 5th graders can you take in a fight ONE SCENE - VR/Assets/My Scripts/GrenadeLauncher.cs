@@ -12,8 +12,8 @@ public class GrenadeLauncher : MonoBehaviour
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] float timeBetweenShots = 0.5f;
     [SerializeField] InputActionReference fireActionReference;
+    [SerializeField] int ammo;
     [SerializeField] TextMeshProUGUI ammoText;
-    [SerializeField] int grenadeLauncherAmmo;
     public bool canShoot = true;
     public AudioSource gunshotSound;
     public bool triggerPressed = false;
@@ -41,12 +41,12 @@ public class GrenadeLauncher : MonoBehaviour
     {
         Debug.Log("coroutine running");
         canShoot = true;
-        if (grenadeLauncherAmmo > 0 && canShoot == true)
+        if (ammo > 0 && canShoot == true)
         {
             PlayMuzzleFlash();
             gunshotSound.Play();
             Launch();
-            grenadeLauncherAmmo--;
+            ammo--;
         }
         canShoot = false;
         yield return new WaitForSeconds(timeBetweenShots);
@@ -63,7 +63,7 @@ public class GrenadeLauncher : MonoBehaviour
 
     private void DisplayAmmo()
     {
-        ammoText.text = grenadeLauncherAmmo.ToString();
+        ammoText.text = ammo.ToString();
     }
 
     // Update is called once per frame

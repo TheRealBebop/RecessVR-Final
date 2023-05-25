@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
             this.enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
             StopAllCoroutines();
-            GetComponent<EnemyHealth>().enabled = false;
+            // GetComponent<EnemyHealth>().enabled = false;
             // FindObjectOfType<CapsuleCollider>().enabled = false;
         }
         // if (zombombHealth.IsDead() == true)
