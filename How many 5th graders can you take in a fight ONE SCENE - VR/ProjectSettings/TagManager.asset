@@ -9,6 +9,7 @@ TagManager:
   - Weapon
   - 'Button Prompt to Enter '
   - Zombomb
+  - Bomb Mesh
   layers:
   - Default
   - TransparentFX
