@@ -159,9 +159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 5965860342125374738}
+  mesh: {fileID: 2211778578194287914}
   blastRadius: 3
   delay: 1.5
-  mesh: {fileID: 2211778578194287914}
 --- !u!1001 &5513060047281887612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325,11 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 80e627d9677f54c60aa5791b32e88841, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.949
+      value: 1.42
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 80e627d9677f54c60aa5791b32e88841, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 5
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 19900000, guid: 80e627d9677f54c60aa5791b32e88841, type: 3}
       propertyPath: m_AllowRoll
