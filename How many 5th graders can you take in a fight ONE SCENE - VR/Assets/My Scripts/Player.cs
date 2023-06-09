@@ -39,13 +39,13 @@ public class Player : MonoBehaviour
     private void Start()
     {
         healthText.text = "Health: " + playerHealth.ToString();
-        scoreText.text = "Kill Count: " + score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 
     public void Update()
     {
         healthText.text = "Health: " + playerHealth.ToString();
-        scoreText.text = "Kill Count: " + score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 
     public void AddToScore(int points)

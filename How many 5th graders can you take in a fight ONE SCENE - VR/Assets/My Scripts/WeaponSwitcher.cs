@@ -48,10 +48,21 @@ public class WeaponSwitcher : MonoBehaviour
                 weapons[currentWeapon].SetActive(true);
             }
         }
-        // else if (currentWeapon == 1)
-        // {
-
-        // }
+        else if (currentWeapon == 1)
+        {
+            if (weapons[2].GetComponent<GrenadeLauncher>().equippedByDefault == true && weapons[2].GetComponent<GrenadeLauncher>().pickedUp == false)
+            {
+                currentWeapon++;
+                foreach (GameObject x in weapons)
+                {
+                    if (x != weapons[currentWeapon])
+                    {
+                        x.SetActive(false);
+                    }
+                }
+                weapons[currentWeapon].SetActive(true);
+            }
+        }
         // else if (currentWeapon == 2)
         // {
 

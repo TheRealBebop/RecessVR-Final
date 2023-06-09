@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class GrenadeLauncher : MonoBehaviour
 {
+    [SerializeField] public bool equippedByDefault = true;
+    [SerializeField] public bool pickedUp = false;
     [SerializeField] Transform spawnPoint;
     [SerializeField] GameObject grenade;
     [SerializeField] float range;
