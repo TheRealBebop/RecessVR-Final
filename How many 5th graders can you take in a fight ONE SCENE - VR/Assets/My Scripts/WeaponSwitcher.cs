@@ -50,7 +50,7 @@ public class WeaponSwitcher : MonoBehaviour
         }
         else if (currentWeapon == 1)
         {
-            if (weapons[2].GetComponent<GrenadeLauncher>().equippedByDefault == true && weapons[2].GetComponent<GrenadeLauncher>().pickedUp == false)
+            if (weapons[2].GetComponent<GrenadeLauncher>().pickedUp == true)
             {
                 currentWeapon++;
                 foreach (GameObject x in weapons)

@@ -14,7 +14,7 @@ public class GrenadeLauncher : MonoBehaviour
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] float timeBetweenShots = 0.5f;
     [SerializeField] InputActionReference fireActionReference;
-    [SerializeField] int ammo;
+    [SerializeField] public int ammo;
     [SerializeField] TextMeshProUGUI ammoText;
     public bool canShoot = true;
     public AudioSource gunshotSound;
@@ -57,6 +57,10 @@ public class GrenadeLauncher : MonoBehaviour
     private void PlayMuzzleFlash()
     {
         muzzleFlash.Play();
+    }
+    public void EquipWeapon()
+    {
+        pickedUp = true;
     }
     void Update()
     {
