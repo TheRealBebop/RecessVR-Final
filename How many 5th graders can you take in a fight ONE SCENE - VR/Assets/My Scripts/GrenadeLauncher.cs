@@ -67,6 +67,11 @@ public class GrenadeLauncher : MonoBehaviour
         DisplayAmmo();
     }
 
+    public void IncreaseAmmo(int bombAmmo)
+    {
+        ammo += bombAmmo;
+    }
+
     private void DisplayAmmo()
     {
         ammoText.text = ammo.ToString();

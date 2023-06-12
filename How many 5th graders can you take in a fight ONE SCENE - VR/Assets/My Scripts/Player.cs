@@ -24,6 +24,12 @@ public class Player : MonoBehaviour
             Debug.Log("Yer dead");
         }
     }
+
+    public void Heal()
+    {
+        playerHealth = 100f;
+    }
+
     public void DeleteDuplicates()
     {
         int numPlayer = FindObjectsOfType<Player>().Length;
