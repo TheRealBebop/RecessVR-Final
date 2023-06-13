@@ -18,9 +18,11 @@ public class HealthPickup : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             pickupDisplay.Invoke();
-            player.Heal();
-            Destroy(gameObject);
-            // StartCoroutine(DisplayPickupCanvas());
+            if (player.playerHealth < 100f)
+            {
+                player.Heal();
+                Destroy(gameObject);
+            }
         }
     }
 }

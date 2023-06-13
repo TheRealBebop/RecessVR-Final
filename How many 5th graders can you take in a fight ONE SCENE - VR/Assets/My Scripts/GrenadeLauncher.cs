@@ -39,6 +39,7 @@ public class GrenadeLauncher : MonoBehaviour
         Debug.Log("trigger pressed");
         StartCoroutine(Shoot());
     }
+
     IEnumerator Shoot()
     {
         Debug.Log("coroutine running");
@@ -54,14 +55,17 @@ public class GrenadeLauncher : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }
+
     private void PlayMuzzleFlash()
     {
         muzzleFlash.Play();
     }
+
     public void EquipWeapon()
     {
         pickedUp = true;
     }
+
     void Update()
     {
         DisplayAmmo();
@@ -69,7 +73,9 @@ public class GrenadeLauncher : MonoBehaviour
 
     public void IncreaseAmmo(int bombAmmo)
     {
-        ammo += bombAmmo;
+        Debug.Log("BOMB ADDING");
+        ammo = ammo + bombAmmo;
+        Debug.Log("BOMBS ADDED");
     }
 
     private void DisplayAmmo()

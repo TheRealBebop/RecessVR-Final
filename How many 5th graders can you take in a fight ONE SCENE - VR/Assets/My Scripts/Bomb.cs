@@ -51,6 +51,10 @@ public class Bomb : MonoBehaviour
                 health = nearbyObject.gameObject.GetComponent<EnemyHealth>();
                 health.TakeDamage(100f);
             }
+            if (nearbyObject.CompareTag("Debris"))
+            {
+                Destroy(nearbyObject);
+            }
         }
     }
 

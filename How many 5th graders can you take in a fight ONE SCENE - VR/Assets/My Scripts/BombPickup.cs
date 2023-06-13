@@ -5,13 +5,13 @@ using UnityEngine.Events;
 
 public class BombPickup : MonoBehaviour
 {
-    [SerializeField] int Ammo;
-    GrenadeLauncher Launcher;
+    [SerializeField] public int ammo;
+    [SerializeField] GrenadeLauncher Launcher;
     public UnityEvent pickupDisplay;
 
     void Start()
     {
-        Launcher = FindObjectOfType<GrenadeLauncher>();
+        // Launcher = FindObjectOfType<GrenadeLauncher>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +19,7 @@ public class BombPickup : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             pickupDisplay.Invoke();
-            Launcher.IncreaseAmmo(Ammo);
+            Launcher.IncreaseAmmo(ammo);
             Destroy(gameObject);
             // StartCoroutine(DisplayPickupCanvas());
         }

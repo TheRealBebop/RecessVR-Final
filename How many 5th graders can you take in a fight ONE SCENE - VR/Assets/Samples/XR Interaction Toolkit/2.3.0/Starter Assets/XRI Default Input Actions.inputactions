@@ -1450,8 +1450,30 @@
                 },
                 {
                     "name": "",
+                    "id": "84daaa7f-5488-413f-845c-cfbf5a49b1d9",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ca4d8137-bc4c-42a8-93d8-61d2d580171a",
                     "path": "<XRController>{RightHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Weapon Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46865bda-fdab-4cd7-a461-06b21c6ac8e1",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>/grippressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -23,7 +23,6 @@ public class GrenadeLauncherPickup : MonoBehaviour
             // Call a function in Weapon.cs to set pickedUp to true
             pickupDisplay.Invoke();
             GrenadeLauncher.EquipWeapon();
-            launcher.ammo = 4;
             Destroy(gameObject);
         }
     }
