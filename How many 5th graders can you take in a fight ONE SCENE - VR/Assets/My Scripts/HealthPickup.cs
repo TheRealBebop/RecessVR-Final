@@ -17,9 +17,9 @@ public class HealthPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            pickupDisplay.Invoke();
             if (player.playerHealth < 100f)
             {
+                pickupDisplay.Invoke();
                 player.Heal();
                 Destroy(gameObject);
             }
