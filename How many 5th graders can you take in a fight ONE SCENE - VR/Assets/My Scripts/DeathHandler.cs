@@ -9,7 +9,9 @@ public class DeathHandler : MonoBehaviour
     private void Start()
     {
         blood = GetComponent<DisplayDamage>();
+        Debug.Log("ENABLING DEATH CANVAS");
         gameOverCanvas.enabled = false;
+        Debug.Log("ENABLED DEATH CANVAS SIKKEEEEE");
     }
 
     public void HandleDeath()

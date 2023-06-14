@@ -99,7 +99,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8363733445120814842
 Transform:
   m_ObjectHideFlags: 0
@@ -164,6 +164,7 @@ MonoBehaviour:
   mesh: {fileID: 2211778578194287914}
   blastRadius: 3
   delay: 1.5
+  debris: {fileID: 0}
 --- !u!1001 &5018509905202913406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,6 +192,10 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1641839030451069998, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1641839031296517884, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -202,6 +207,10 @@ PrefabInstance:
     - target: {fileID: 1641839031519812571, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641839031519812571, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1641839031519912571, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
       propertyPath: m_Materials.Array.size
@@ -262,6 +271,18 @@ PrefabInstance:
     - target: {fileID: 5931093882964829322, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212305391575197511, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
+      propertyPath: clearBehavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212305391575197511, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
+      propertyPath: cameraShake.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212305391575197511, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
+      propertyPath: cameraShake.useMainCamera
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8069872721764621861, guid: 08bc3173e3ac6af4d93f486bbcd594d5, type: 3}
       propertyPath: playOnAwake

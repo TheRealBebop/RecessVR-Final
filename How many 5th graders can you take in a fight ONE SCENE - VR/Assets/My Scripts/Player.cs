@@ -5,12 +5,11 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-
     [SerializeField] public float playerHealth = 100f;
     [SerializeField] int score = 0;
-    DeathHandler loadGameOver;
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI scoreText;
+    DeathHandler loadGameOver;
 
     public bool isDead = false;
     public void TakeDamage(float enemyDamage)

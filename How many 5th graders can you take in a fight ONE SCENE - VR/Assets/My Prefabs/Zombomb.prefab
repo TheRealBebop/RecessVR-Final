@@ -5554,7 +5554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717de54821c113345924d9d5c606b00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 2000582700}
+  explosion: {fileID: 2600134311523023193}
   damage: 70
 --- !u!114 &813622825
 MonoBehaviour:
@@ -6224,6 +6224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CFXR Explosion 1 (no smoke)
       objectReference: {fileID: 0}
+    - target: {fileID: 3302797294958794917, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: clearBehavior
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
 --- !u!198 &2600134311523023193 stripped
@@ -6377,10 +6381,5 @@ PrefabInstance:
 --- !u!4 &1981185390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8702348702331059900, guid: e7824330e164cad4b85a924120124738, type: 3}
-  m_PrefabInstance: {fileID: 8702348703170577362}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &2000582700 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8702348702350457854, guid: e7824330e164cad4b85a924120124738, type: 3}
   m_PrefabInstance: {fileID: 8702348703170577362}
   m_PrefabAsset: {fileID: 0}

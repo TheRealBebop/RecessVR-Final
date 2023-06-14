@@ -10,6 +10,7 @@ public class ZombombExplosion : MonoBehaviour
     [SerializeField] float explosionForce = 10000f;
 
     ZombombHealth health2;
+
     EnemyHealth health;
 
     void Start()
@@ -33,7 +34,7 @@ public class ZombombExplosion : MonoBehaviour
             {
                 Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
                 Debug.Log("RIGIDBODIES COLLECTED");
-                if (rb != null)
+                if (rb != null && nearbyObject.GetComponent<EnemyHealth>().isDead == false)
                 {
                     // NavMeshAgent nm = nearbyObject.GetComponent<NavMeshAgent>();
                     // nm.enabled = false;

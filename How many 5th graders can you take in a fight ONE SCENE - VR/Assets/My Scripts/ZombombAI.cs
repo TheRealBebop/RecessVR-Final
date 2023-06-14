@@ -45,6 +45,7 @@ public class ZombombAI : MonoBehaviour
             navMeshAgent.speed = 0;
             this.enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
+            zombombHealth.enabled = false;
             StopAllCoroutines();
             // FindObjectOfType<CapsuleCollider>().enabled = false;
         }

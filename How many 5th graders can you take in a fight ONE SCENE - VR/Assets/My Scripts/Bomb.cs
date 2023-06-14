@@ -11,6 +11,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] float blastRadius = 3f;
     [SerializeField] float delay = 1f;
     Player playa;
+    [SerializeField] GameObject debris;
     void Start()
     {
         playa = GetComponent<Player>();
@@ -26,28 +27,28 @@ public class Bomb : MonoBehaviour
         explosionEffect.Play();
         mesh.SetActive(false);
         Kill();
-        Invoke("Stop", 2f);
+        Invoke("Stop", 5f);
     }
     private void Kill()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
         foreach (Collider nearbyObject in colliders)
         {
-            if (nearbyObject.CompareTag("Enemy"))
+            if (nearbyObject.CompareTag("Enemy") && nearbyObject.GetComponent<EnemyHealth>().isDead == false)
             {
                 Debug.Log(nearbyObject.gameObject.name);
                 nearbyObject.gameObject.GetComponent<EnemyHealth>().TakeDamage(100f);
             }
 
-            if (nearbyObject.CompareTag("Zombomb"))
+            if (nearbyObject.CompareTag("Zombomb") && nearbyObject.GetComponent<ZombombHealth>().isDead == false)
             {
                 Debug.Log(nearbyObject.gameObject.name);
                 nearbyObject.gameObject.GetComponent<ZombombHealth>().TakeDamage(100f);
             }
 
-            if (nearbyObject.CompareTag("Debris"))
+            if (nearbyObject == debris)
             {
-                Destroy(nearbyObject);
+                Destroy(debris);
             }
         }
     }

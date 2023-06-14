@@ -14,6 +14,7 @@ public class WeaponPickup : MonoBehaviour
         {
             // weaponPickedUp = true;
             // Call a function in Weapon.cs to set pickedUp to true
+            Debug.Log("SHOTGUUUUUUN");
             pickupDisplay.Invoke();
             gun.EquipWeapon();
             gun.pickedUp = true;

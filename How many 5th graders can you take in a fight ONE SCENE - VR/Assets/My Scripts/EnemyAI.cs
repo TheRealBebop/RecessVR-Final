@@ -35,6 +35,7 @@ public class EnemyAI : MonoBehaviour
             navMeshAgent.speed = 0;
             this.enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
+            health.enabled = false;
             StopAllCoroutines();
             // GetComponent<EnemyHealth>().enabled = false;
             // FindObjectOfType<CapsuleCollider>().enabled = false;
