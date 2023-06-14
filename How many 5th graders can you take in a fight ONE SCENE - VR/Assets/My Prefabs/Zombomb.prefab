@@ -5570,7 +5570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 100
   zombieBlood: {fileID: 1463079061}
-  explosion: {fileID: 2000582700}
+  explosion: {fileID: 2600134311523023193}
   isDead: 0
 --- !u!114 &813622826
 MonoBehaviour:
@@ -5617,7 +5617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9625433e01dd041832c1f4ef3c920b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blastRadius: 10.1
+  blastRadius: 3
   explosionForce: 100009.79
 --- !u!1 &473593205810725042
 GameObject:
@@ -6169,6 +6169,68 @@ Transform:
   m_Father: {fileID: 470076780245996000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -17.429825, y: -172.43488, z: -52.616913}
+--- !u!1001 &1528429682
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1981185390}
+    m_Modifications:
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280527979, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600134310280567883, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+      propertyPath: m_Name
+      value: CFXR Explosion 1 (no smoke)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+--- !u!198 &2600134311523023193 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2600134310299927851, guid: 4f40fc272bff80040a56fe75f182c101, type: 3}
+  m_PrefabInstance: {fileID: 1528429682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8028749241436564084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6246,6 +6308,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 475534584355833802}
     m_Modifications:
+    - target: {fileID: 8702348702330757786, guid: e7824330e164cad4b85a924120124738, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8702348702330757788, guid: e7824330e164cad4b85a924120124738, type: 3}
       propertyPath: m_Name
       value: Zombomb Explosion
@@ -6293,6 +6359,18 @@ PrefabInstance:
     - target: {fileID: 8702348702331059900, guid: e7824330e164cad4b85a924120124738, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702348702350457854, guid: e7824330e164cad4b85a924120124738, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702348702350541406, guid: e7824330e164cad4b85a924120124738, type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702348702350541406, guid: e7824330e164cad4b85a924120124738, type: 3}
+      propertyPath: m_RenderAlignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7824330e164cad4b85a924120124738, type: 3}

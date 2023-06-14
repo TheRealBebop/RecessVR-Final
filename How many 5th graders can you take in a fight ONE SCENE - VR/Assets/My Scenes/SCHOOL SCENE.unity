@@ -28868,25 +28868,9 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[3]
       value: 
       objectReference: {fileID: 347849287}
-    - target: {fileID: 813622828, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
-      propertyPath: blastRadius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000667020, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
-      propertyPath: m_AllowRoll
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000667020, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
-      propertyPath: m_RenderAlignment
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 473558227045181038, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
       propertyPath: m_Name
       value: Zombomb
-      objectReference: {fileID: 0}
-    - target: {fileID: 473558227045181038, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 475534584355833802, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
       propertyPath: m_RootOrder
@@ -40876,7 +40860,7 @@ Transform:
   m_Children:
   - {fileID: 1578644701}
   m_Father: {fileID: 1959343574}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1906866826
 PrefabInstance:
@@ -41778,7 +41762,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1587532831, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1706307937, guid: 79ddc13b4e32dcc4badaea478b5327b9, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[1].time
@@ -50158,6 +50142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6011654372963971043, guid: eba03ef7d4effca43a8f5425c8cbf1be, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8363733445120814842, guid: eba03ef7d4effca43a8f5425c8cbf1be, type: 3}
       propertyPath: m_RootOrder
       value: 2
