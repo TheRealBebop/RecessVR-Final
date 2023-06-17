@@ -18,7 +18,6 @@ public class GrenadeLauncher : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText;
     public bool canShoot = true;
     public AudioSource gunshotSound;
-    public bool triggerPressed = false;
     private void OnEnable()
     {
         canShoot = true;
@@ -35,9 +34,9 @@ public class GrenadeLauncher : MonoBehaviour
     }
     public void OnFired(InputAction.CallbackContext context)
     {
-        triggerPressed = true; /*context.ReadValueAsButton();*/
         Debug.Log("trigger pressed");
-        StartCoroutine(Shoot());
+        if (gameObject.activeSelf)
+            StartCoroutine(Shoot());
     }
 
     IEnumerator Shoot()
@@ -73,9 +72,7 @@ public class GrenadeLauncher : MonoBehaviour
 
     public void IncreaseAmmo(int bombAmmo)
     {
-        Debug.Log("BOMB ADDING");
         ammo = ammo + bombAmmo;
-        Debug.Log("BOMBS ADDED");
     }
 
     private void DisplayAmmo()
@@ -83,7 +80,6 @@ public class GrenadeLauncher : MonoBehaviour
         ammoText.text = ammo.ToString();
     }
 
-    // Update is called once per frame
     public void Launch()
     {
         GameObject grenadeInstance = Instantiate(grenade, spawnPoint.position, spawnPoint.rotation);

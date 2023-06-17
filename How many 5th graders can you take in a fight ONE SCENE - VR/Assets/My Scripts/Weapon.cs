@@ -40,7 +40,8 @@ public class Weapon : MonoBehaviour
     {
         triggerPressed = true; /*context.ReadValueAsButton();*/
         Debug.Log("trigger pressed");
-        StartCoroutine(Shoot());
+        if (gameObject.activeSelf)
+            StartCoroutine(Shoot());
     }
 
     IEnumerator Shoot()
@@ -76,6 +77,13 @@ public class Weapon : MonoBehaviour
     {
         muzzleFlash.Play();
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, range);
+    }
+
 
     public void EquipWeapon()
     {

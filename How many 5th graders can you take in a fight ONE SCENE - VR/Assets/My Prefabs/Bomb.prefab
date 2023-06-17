@@ -99,7 +99,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8363733445120814842
 Transform:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   mesh: {fileID: 2211778578194287914}
   blastRadius: 3
   delay: 1.5
-  debris: {fileID: 0}
+  debris: {fileID: 2215090130066409117, guid: 094f02a83c425034aa9cad0bfad06a58, type: 3}
 --- !u!1001 &5018509905202913406
 PrefabInstance:
   m_ObjectHideFlags: 0

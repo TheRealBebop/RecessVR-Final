@@ -14,6 +14,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] GameObject debris;
     void Start()
     {
+        // debris = GameObject.FindGameObjectWithTag("Debris");
         playa = GetComponent<Player>();
         Invoke("Explode", delay);
     }
@@ -46,9 +47,10 @@ public class Bomb : MonoBehaviour
                 nearbyObject.gameObject.GetComponent<ZombombHealth>().TakeDamage(100f);
             }
 
-            if (nearbyObject == debris)
+            if (nearbyObject.CompareTag("Debris"))
             {
-                Destroy(debris);
+                Debug.Log("DEBRIS FOUND");
+                nearbyObject.gameObject.GetComponent<debris>().Destruction();
             }
         }
     }
