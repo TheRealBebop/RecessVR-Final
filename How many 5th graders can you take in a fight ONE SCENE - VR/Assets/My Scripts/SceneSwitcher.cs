@@ -10,6 +10,7 @@ public class SceneSwitcher : MonoBehaviour
     [SerializeField] Transform teleportPos;
     [SerializeField] bool sceneChange = false;
     [SerializeField] InputActionReference enterKey;
+    [SerializeField] GameObject firstFloorLights;
     GameObject player;
     int currentSceneIndex;
     Scene scene;
@@ -48,6 +49,7 @@ public class SceneSwitcher : MonoBehaviour
     {
         if (sceneChange && buttonPromptCanvas == true)
         {
+            firstFloorLights.SetActive(false);
             player.transform.position = teleportPos.position + verticalPos;
         }
     }
