@@ -7,6 +7,7 @@ public class WeaponWheelDisplay : MonoBehaviour
 {
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
+    [SerializeField] Weapon gun;
     [SerializeField] TextMeshProUGUI ammoText;
 
     // Update is called once per frame
@@ -17,7 +18,11 @@ public class WeaponWheelDisplay : MonoBehaviour
 
     private void DisplayAmmo()
     {
-        int currentAmmo = ammoSlot.GetAmmoAmount(ammoType);
-        ammoText.text = currentAmmo.ToString();
+        int currentAmmo;
+        if (gun.pickedUp == true || gun.equippedByDefault == true)
+        {
+            currentAmmo = ammoSlot.GetAmmoAmount(ammoType);
+            ammoText.text = currentAmmo.ToString();
+        }
     }
 }

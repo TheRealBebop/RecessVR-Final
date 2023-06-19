@@ -16,6 +16,7 @@ public class LauncherAmmoDisplay : MonoBehaviour
 
     private void DisplayAmmo()
     {
-        ammoText.text = launcher.ammo.ToString();
+        if (launcher.pickedUp == true)
+            ammoText.text = launcher.ammo.ToString();
     }
 }
