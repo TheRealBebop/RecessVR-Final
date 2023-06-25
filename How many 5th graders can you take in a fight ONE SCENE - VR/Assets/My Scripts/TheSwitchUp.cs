@@ -31,6 +31,7 @@ public class TheSwitchUp : MonoBehaviour
             gameObject.SetActive(false);
             circuitBreakerOn.SetActive(true);
             redLights.SetActive(true);
+            playerscript.generatorTurnedOn = true;
         }
     }
 

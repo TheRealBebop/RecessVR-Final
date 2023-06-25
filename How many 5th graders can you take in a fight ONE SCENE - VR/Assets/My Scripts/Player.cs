@@ -9,9 +9,10 @@ public class Player : MonoBehaviour
     [SerializeField] int score = 0;
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] GameObject toppledWall;
     DeathHandler loadGameOver;
-
     public bool isDead = false;
+    public bool generatorTurnedOn;
     public void TakeDamage(float enemyDamage)
     {
         playerHealth -= enemyDamage;
@@ -27,6 +28,14 @@ public class Player : MonoBehaviour
     public void Heal()
     {
         playerHealth = 100f;
+    }
+
+    public void BreakWall()
+    {
+        if (generatorTurnedOn == true)
+        {
+            toppledWall.GetComponent<Animator>().SetTrigger("WALL FALL");
+        }
     }
 
     public void DeleteDuplicates()
