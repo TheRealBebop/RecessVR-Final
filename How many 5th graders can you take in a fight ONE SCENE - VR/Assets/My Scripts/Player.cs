@@ -10,9 +10,17 @@ public class Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] GameObject toppledWall;
+    [SerializeField] GameObject horde;
+    [SerializeField] ParticleSystem smoke;
     DeathHandler loadGameOver;
     public bool isDead = false;
     public bool generatorTurnedOn;
+    private void Start()
+    {
+        healthText.text = "Health: " + playerHealth.ToString();
+        scoreText.text = "Score: " + score.ToString();
+        horde.SetActive(false);
+    }
     public void TakeDamage(float enemyDamage)
     {
         playerHealth -= enemyDamage;
@@ -35,6 +43,8 @@ public class Player : MonoBehaviour
         if (generatorTurnedOn == true)
         {
             toppledWall.GetComponent<Animator>().SetTrigger("WALL FALL");
+            horde.SetActive(true);
+            smoke.Play();
         }
     }
 
@@ -49,11 +59,6 @@ public class Player : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-    }
-    private void Start()
-    {
-        healthText.text = "Health: " + playerHealth.ToString();
-        scoreText.text = "Score: " + score.ToString();
     }
 
     public void Update()
