@@ -5256,12 +5256,7 @@ GameObject:
   - component: {fileID: 475534584355833802}
   - component: {fileID: 559933305412220288}
   - component: {fileID: 537337999137367242}
-  - component: {fileID: 505364783657157766}
   - component: {fileID: 474655229073455534}
-  - component: {fileID: 474655228470032682}
-  - component: {fileID: 474655228470032683}
-  - component: {fileID: 474655228470032673}
-  - component: {fileID: 6959572558733209299}
   - component: {fileID: 1706307939}
   - component: {fileID: 1706307938}
   - component: {fileID: 813622824}
@@ -5327,23 +5322,6 @@ CapsuleCollider:
   m_Height: 1.0367166
   m_Direction: 1
   m_Center: {x: -0.029363293, y: 0.44335842, z: 0.03178239}
---- !u!114 &505364783657157766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473558227045181038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d6da23a2cbdbf419e581162aa2eaaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_moveSpeed: 1
-  m_turnSpeed: 100
-  m_animator: {fileID: 559933305412220288}
-  m_rigidBody: {fileID: 0}
-  m_controlMode: 1
 --- !u!195 &474655229073455534
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5366,66 +5344,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &474655228470032682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473558227045181038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 105f8f96a330df2409564c0a549c2a5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRange: 6.4
-  turnSpeed: 5
-  isProvoked: 0
---- !u!114 &474655228470032683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473558227045181038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5929deb5398a78418f748fd0c2afac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 30
---- !u!114 &474655228470032673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473558227045181038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8787deb23ace03143a3ddd5b5d41f200, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 100
-  isDead: 0
---- !u!114 &6959572558733209299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473558227045181038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee09854d812a7c540b80d5710011ad5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  waypointIndex: 0
 --- !u!114 &1706307939
 MonoBehaviour:
   m_ObjectHideFlags: 0

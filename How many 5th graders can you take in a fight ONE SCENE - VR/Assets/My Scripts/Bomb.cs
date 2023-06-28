@@ -12,6 +12,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] float delay = 1f;
     Player playa;
     [SerializeField] GameObject debris;
+    [SerializeField] AudioSource explosionSound;
     void Start()
     {
         // debris = GameObject.FindGameObjectWithTag("Debris");
@@ -26,6 +27,7 @@ public class Bomb : MonoBehaviour
     public void Explode()
     {
         explosionEffect.Play();
+        explosionSound.Play();
         mesh.SetActive(false);
         Kill();
         Invoke("Stop", 5f);

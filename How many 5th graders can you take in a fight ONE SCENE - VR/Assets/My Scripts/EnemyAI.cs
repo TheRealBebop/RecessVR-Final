@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
 
     [SerializeField] float turnSpeed = 5f;
+    [SerializeField] bool TurnOnGizmos = true;
     NavMeshAgent navMeshAgent;
     EnemyHealth health;
     ZombombHealth zombombHealth;
@@ -109,8 +110,11 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, chaseRange);
+        if (TurnOnGizmos == true)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, chaseRange);
+        }
     }
 
     IEnumerator AllZombieSounds()

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject toppledWall;
     [SerializeField] GameObject horde;
     [SerializeField] ParticleSystem smoke;
+    [SerializeField] AudioSource wallExplosionSound;
     DeathHandler loadGameOver;
     public bool isDead = false;
     public bool generatorTurnedOn;
@@ -19,7 +20,6 @@ public class Player : MonoBehaviour
     {
         healthText.text = "Health: " + playerHealth.ToString();
         scoreText.text = "Score: " + score.ToString();
-        horde.SetActive(false);
     }
     public void TakeDamage(float enemyDamage)
     {
@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
         if (generatorTurnedOn == true)
         {
             toppledWall.GetComponent<Animator>().SetTrigger("WALL FALL");
+            wallExplosionSound.Play();
             horde.SetActive(true);
             smoke.Play();
         }
