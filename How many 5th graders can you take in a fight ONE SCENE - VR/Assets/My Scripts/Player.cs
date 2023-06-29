@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
             loadGameOver = FindObjectOfType<DeathHandler>();
             loadGameOver.HandleDeath();
             Debug.Log("Yer dead");
+            Debug.Log("Number of TRIANGLES IN THE SCENE:", UnityEditor.UnityStats.triangles);
         }
     }
 
