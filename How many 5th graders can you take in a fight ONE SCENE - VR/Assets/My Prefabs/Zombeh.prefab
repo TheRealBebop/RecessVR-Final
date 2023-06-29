@@ -558,6 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseRange: 6.4
   turnSpeed: 5
+  TurnOnGizmos: 1
   isProvoked: 0
 --- !u!114 &474655228470032683
 MonoBehaviour:
@@ -5434,9 +5435,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 3
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

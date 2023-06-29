@@ -43,9 +43,12 @@ public class Player : MonoBehaviour
         if (generatorTurnedOn == true)
         {
             toppledWall.GetComponent<Animator>().SetTrigger("WALL FALL");
-            wallExplosionSound.Play();
             horde.SetActive(true);
+            Debug.Log("Horde ACTIVE");
             smoke.Play();
+            wallExplosionSound.Play();
+            Debug.Log("WALL FALLEN SOUND");
+            generatorTurnedOn = false;
         }
     }
 
