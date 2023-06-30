@@ -40,7 +40,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7360036652637879622, guid: be4105263a3576a4a9d8bb22a5f5ca29, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1450178885747020, guid: be4105263a3576a4a9d8bb22a5f5ca29, type: 3}
       propertyPath: m_Name
@@ -150,3 +150,4 @@ MonoBehaviour:
   teleportPos: {fileID: 0}
   sceneChange: 0
   enterKey: {fileID: -1009968552116057451, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  buttonPromptCanvas: {fileID: 0}
